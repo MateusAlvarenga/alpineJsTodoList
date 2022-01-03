@@ -1,15 +1,21 @@
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
 
-<script src="//unpkg.com/alpinejs" defer></script>
-
-<script src="https://cdn.tailwindcss.com"></script>
-
-<script src="./app.js"></script>
-
-<script src="./components/Todo.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine JS Todo List</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./app.js"></script>
+    <script src="./components/Todo.js"></script>
+</head>
 
 <body id="app">
-    <div id="search" x-data="Todo()">
+    <div x-data="Todo()">
         <div x-html="html"></div>
     </div>
 </body>
+
+</html>
